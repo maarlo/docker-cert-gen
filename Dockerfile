@@ -1,7 +1,7 @@
 FROM debian:latest
 
 RUN apt update && apt upgrade -y
-RUN apt install openssl
+RUN apt install openssl -y
 
 WORKDIR /root
 COPY ssl.sh .
